@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(112, 116, 59);
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    height: 50px;
+    outline: none;
+    width: 450px;
+    font-size: 1.15rem;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 2;
+    border: 2px solid #03a9f4;
+    background-color: #e9f1f1;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 2px;
+    cursor: pointer;
+    border: 2px solid #03a9f4;
+    border-radius: 5px;
+    font-size: larger;
+}
+
+.list {
+    position: relative;
+    background: rgb(120, 162, 241);
+    width: 350px;
+}
+
+.list h2 {
+    background: #eca25d;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.list ul {
+    position: relative;
+    padding: 20px;
+}
+
+.list ul li {
+    position: relative;
+    list-style: none;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    ;
+}
+
+.list ul li:last-child {
+    border-bottom: none;
+}
+
+.list ul li label {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.list ul li label p {
+    position: absolute;
+}
+
+.list ul li label span {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list ul li label span::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 10px;
+    height: 5px;
+    border-left: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    transform: rotate(-40deg)
+}
